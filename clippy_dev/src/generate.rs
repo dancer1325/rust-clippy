@@ -52,7 +52,7 @@ impl LintData<'_> {
         updater.update_file_checked(
             "cargo dev update_lints",
             update_mode,
-            "README.md.md",
+            "index.md.md",
             &mut update_text_region_fn("[There are over ", " lints included in this crate!]", |dst| {
                 write!(dst, "{lint_count}").unwrap();
             }),
@@ -60,7 +60,7 @@ impl LintData<'_> {
         updater.update_file_checked(
             "cargo dev update_lints",
             update_mode,
-            "book/src/README.md.md",
+            "book/src/index.md.md",
             &mut update_text_region_fn("[There are over ", " lints included in this crate!]", |dst| {
                 write!(dst, "{lint_count}").unwrap();
             }),
